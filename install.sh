@@ -17,9 +17,9 @@ cp /etc/mysql/mariadb.conf.d/50-server.cnf /etc/mysql/my.cnf && \
 # I install a bunch of VLC packages need for the libvlc stream, but they have
 # a stack of dependencies (xserver, gcc) that add a few hundred MBs.
 apt-get install -y \
-  zoneminder 
-  php-gd 
-  sudo 
+  zoneminder \
+  php-gd \
+  sudo \
   vlc libvlc-dev libvlccore-dev && \
 chmod 740 /etc/zm/zm.conf && \
 chown root:www-data /etc/zm/zm.conf && \
